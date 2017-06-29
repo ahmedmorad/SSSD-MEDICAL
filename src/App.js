@@ -21,7 +21,7 @@ class App extends Component {
         <Menu>
           <Menu.Menu>
             <Menu.Item name='logo' onClick={this.handleItemClick}>Logo <img src={logo} className="NavBar-logo" alt="logo" /></Menu.Item>
-            <Menu.Item name='customers' onClick={this.handleItemClick}>Customers</Menu.Item>
+            <Menu.Item name='patients' onClick={this.handleItemClick}>My Patients</Menu.Item>
           </Menu.Menu>
 
 
