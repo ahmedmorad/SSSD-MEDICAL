@@ -1,0 +1,32 @@
+.NavBar-logo {
+  animation: NavBar-logo-spin infinite 20s linear;
+}
+
+
+@keyframes NavBar-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.ui.segment{
+    /*background-color: beige;*/
+    border-radius: 0px;
+}
+
+.ui.menu, thead th{
+    /*background: palegoldenrod!important;*/
+    border-radius: 0px;
+}
+
+.ui.table tfoot th{
+    padding: 0.4em;
+}
+.ui.selection.dropdown {
+    border-radius: 0;
+}
+.ui.form input{
+    border-radius: 0;
+}
+body{
+    background-color: aliceblue;
+}
