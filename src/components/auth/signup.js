@@ -34,16 +34,18 @@ class Signup extends Component {
                     Sign up</Header>
                 <Divider/>
                 <Form>
+                    <Form.Group widths='equal'>
+                        <Form.Field>
+                            <label>First Name</label>
+                            <input placeholder='First Name'/>
+                        </Form.Field>
+                        <Form.Field>
+                            <label>Last Name</label>
+                            <input placeholder='Last Name'/>
+                        </Form.Field>
+                    </Form.Group>
                     <Form.Field>
-                        <label>First Name</label>
-                        <input placeholder='First Name'/>
-                    </Form.Field>
-                    <Form.Field>
-                        <label>Last Name</label>
-                        <input placeholder='Last Name'/>
-                    </Form.Field>
-                    <Form.Field>
-                        <label>Last Name</label>
+                        <label>Email</label>
                         <input placeholder='Email'/>
                     </Form.Field>
                     <Form.Field>
