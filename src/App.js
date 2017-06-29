@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import './style.css';
 import CheckupList from './containers/checkup-list';
 import CheckupDetail from './containers/checkup-details';
+import AppMenu from './components/menu';
 
 class App extends Component {
 
@@ -14,23 +15,10 @@ class App extends Component {
   handleItemClick = (e, { name }) => this.setState({ activeItem: name });
 
   render() {
-
-
     return (
       <div className="App">
-        <Menu>
-          <Menu.Menu>
-            <Menu.Item name='logo' onClick={this.handleItemClick}>Logo <img src={logo} className="NavBar-logo" alt="logo" /></Menu.Item>
-            <Menu.Item name='patients' onClick={this.handleItemClick}>My Patients</Menu.Item>
-          </Menu.Menu>
-
-
-          <Menu.Menu position='right'>
-            <Menu.Item name='signin' onClick={this.handleItemClick}>Sign In</Menu.Item>
-            <Menu.Item name='signup' onClick={this.handleItemClick}>Sign up</Menu.Item>
-          </Menu.Menu>
-        </Menu>
-
+        
+        <AppMenu></AppMenu>
         <Container>
 
           <Grid columns={2} stackable={true} divided>
