@@ -8,6 +8,7 @@ import Home from './components/home';
 import Patient from './containers/Patient';
 import Patients from './containers/PatientList';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
+import Charts from './components/charts';
 
 class App extends Component {
 
@@ -24,6 +25,10 @@ class App extends Component {
               <Route path="/signup" component={Signup}/>
               <Route path="/patients" component={Patients}/>
               <Route path="/patient" component={Patient}/>
+<<<<<<< HEAD
+=======
+              <Route path="/charts" component={Charts}/>
+>>>>>>> 547a9ddea41e5801ee9df5768c50bb9e460128c4
             </Container>
           </div>
         </Router>
