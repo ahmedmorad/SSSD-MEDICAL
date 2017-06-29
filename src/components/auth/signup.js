@@ -1,6 +1,32 @@
 import React, {Component} from 'react';
-import {Segment, Icon, Divider, Form, Button, Checkbox, Header} from 'semantic-ui-react';
+import {
+    Segment,
+    Select,
+    Icon,
+    Divider,
+    Form,
+    Button,
+    Checkbox,
+    Header
+} from 'semantic-ui-react';
 class Signup extends Component {
+
+    state = {
+        countryOptions: [
+            {
+                key: 'af',
+                value: 'af',
+                flag: 'af',
+                text: 'Afghanistan'
+            }, {
+                key: 'eg',
+                value: 'eg',
+                flag: 'eg',
+                text: 'Egypt'
+            }
+        ]
+    };
+
     render() {
         return (
             <Segment>
@@ -19,6 +45,10 @@ class Signup extends Component {
                     <Form.Field>
                         <label>Last Name</label>
                         <input placeholder='Email'/>
+                    </Form.Field>
+                    <Form.Field>
+                        <label>country</label>
+                        <Select placeholder='Select your country' options={this.state.countryOptions}/>
                     </Form.Field>
                     <Form.Field>
                         <Checkbox label='I agree to the Terms and Conditions'/>
