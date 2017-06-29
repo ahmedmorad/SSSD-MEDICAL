@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Menu} from 'semantic-ui-react';
+import {Menu, Icon} from 'semantic-ui-react';
 import logo from '../logo.svg';
 import '../style.css';
 import { Link} from 'react-router-dom';
@@ -17,7 +17,7 @@ class AppMenu extends Component {
                     </Menu.Item>
 
                     <Menu.Item name='patients' as={Link} to='/patients'>Patients</Menu.Item>
-                    <Menu.Item name='charts' as={Link} to='/charts'>Charts</Menu.Item>
+                    <Menu.Item name='charts' as={Link} to='/charts'><Icon name='pie chart'/>Charts</Menu.Item>
 
                 </Menu.Menu>
 
