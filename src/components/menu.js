@@ -12,7 +12,7 @@ class AppMenu extends Component {
             <Menu>
                 <Menu.Menu>
                     <Menu.Item name='logo' onClick={this.handleItemClick}>Logo <img src={logo} className="NavBar-logo" alt="logo" /></Menu.Item>
-                    <Menu.Item name='patients' onClick={this.handleItemClick}>My Patients</Menu.Item>
+                    <Menu.Item name='patients' onClick={this.handleItemClick}>Patients</Menu.Item>
                 </Menu.Menu>
 
 
