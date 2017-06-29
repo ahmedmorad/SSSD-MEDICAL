@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import {Segment, Icon, Divider, Form, Button} from 'semantic-ui-react';
+import {Segment, Icon, Divider, Form, Button, Header, Checkbox} from 'semantic-ui-react';
+
 class Signin extends Component {
     render() {
         return (
