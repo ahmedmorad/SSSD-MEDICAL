@@ -1,6 +1,6 @@
-export const selectCheckup = (checkup)=>{
+export const selectPatient = (patient)=>{
     return {
-        type: 'SELECT_CHECKUP',
-        payload: checkup
+        type: 'SELECT_PATIENT',
+        payload: patient
     }
 }

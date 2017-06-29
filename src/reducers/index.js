@@ -1,10 +1,10 @@
 import {combineReducers} from 'redux';
-import CheckupsReducer from './reducer_checkup';
-import ActiveCheckup from './reducer_active_checkup';
+import PatientsReducer from './PatientsReducer';
+import ActivePatientReducer from './ActivePatientReducer';
 
 const allReducers = combineReducers({
-    checkups: CheckupsReducer,
-    activeCheckup: ActiveCheckup
+    patients: PatientsReducer,
+    activePatient: ActivePatientReducer
 });
 
 export default allReducers;
