@@ -5,6 +5,8 @@ import './style.css';
 import CheckupList from './containers/checkup-list';
 import CheckupDetail from './containers/checkup-details';
 import AppMenu from './components/menu';
+import Signin from './components/auth/signin';
+import Signup from './components/auth/signup';
 
 class App extends Component {
 
@@ -24,67 +26,10 @@ class App extends Component {
           <Grid columns={2} stackable={true} divided>
             <Grid.Row>
               <Grid.Column>
-
-                <Segment>
-                  <Header as='h2'><Icon name='sign in' size='large' /> Sign In</Header>
-                  <Divider />
-                  <Form>
-                    <Form.Field>
-                      <label>First Name</label>
-                      <input placeholder='First Name' />
-                    </Form.Field>
-                    <Form.Field>
-                      <label>Last Name</label>
-                      <input placeholder='Last Name' />
-                    </Form.Field>
-                    <Form.Field>
-                      <Checkbox label='Remember Me' />
-                    </Form.Field>
-                    <Divider />
-                    <Button type='button' primary>Submit</Button>
-                    <Button.Group>
-                      <Button>Cancel</Button>
-                      <Button.Or />
-                      <Button positive>Save</Button>
-                    </Button.Group>
-                  </Form>
-                </Segment>
-
+                  <Signin/>
               </Grid.Column>
               <Grid.Column>
-
-                <Segment>
-                  <Header as='h2'><Icon name='signup' size='large' /> Sign up</Header>
-                  <Divider />
-                  <Form>
-                    <Form.Field>
-                      <label>First Name</label>
-                      <input placeholder='First Name' />
-                    </Form.Field>
-                    <Form.Field>
-                      <label>Last Name</label>
-                      <input placeholder='Last Name' />
-                    </Form.Field>
-                    <Form.Field>
-                      <label>Last Name</label>
-                      <input placeholder='Email' />
-                    </Form.Field>
-                    <Form.Field>
-                      <Checkbox label='I agree to the Terms and Conditions' />
-                    </Form.Field>
-                    <Divider />
-                    <Button type='button' primary>Submit</Button>
-                    <Button
-                      color='red'
-                      content='Like'
-                      labelPosition='left'
-                      icon='heart'
-                      label={{ basic: true, color: 'red', pointing: 'right', content: '2,048' }}
-                    />
-
-                  </Form>
-                </Segment>
-
+                <Signup/>
               </Grid.Column>
             </Grid.Row>
 
