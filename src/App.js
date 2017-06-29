@@ -25,10 +25,7 @@ class App extends Component {
               <Route path="/signup" component={Signup}/>
               <Route path="/patients" component={Patients}/>
               <Route path="/patient" component={Patient}/>
-<<<<<<< HEAD
-=======
               <Route path="/charts" component={Charts}/>
->>>>>>> 547a9ddea41e5801ee9df5768c50bb9e460128c4
             </Container>
           </div>
         </Router>

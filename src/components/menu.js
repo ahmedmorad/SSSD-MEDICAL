@@ -17,10 +17,7 @@ class AppMenu extends Component {
                     </Menu.Item>
 
                     <Menu.Item name='patients' as={Link} to='/patients'>Patients</Menu.Item>
-<<<<<<< HEAD
-=======
                     <Menu.Item name='charts' as={Link} to='/charts'>Charts</Menu.Item>
->>>>>>> 547a9ddea41e5801ee9df5768c50bb9e460128c4
 
                 </Menu.Menu>
 
