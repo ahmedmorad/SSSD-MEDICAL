@@ -1,6 +1,6 @@
 export default function (state = {}, action) {
     switch (action.type) {
-        case "SELECT_CHECKUP":
+        case "SELECT_PATIENT":
             {
                 state = action.payload;
                 break;

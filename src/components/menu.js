@@ -3,7 +3,6 @@ import {Menu} from 'semantic-ui-react';
 import logo from '../logo.svg';
 import '../style.css';
 import { Link} from 'react-router-dom';
-// import {BrowserRouter as Router, Route} from 'react-router-dom';
 class AppMenu extends Component {
 
     handleItemClick = (e, {name}) => this.setState({activeItem: name});
@@ -17,7 +16,7 @@ class AppMenu extends Component {
                         <img src={logo} className="NavBar-logo" alt="logo"/>
                     </Menu.Item>
 
-                    <Menu.Item name='patients' >Patients</Menu.Item>
+                    <Menu.Item name='patients' as={Link} to='/patients'>Patients</Menu.Item>
 
                 </Menu.Menu>
 
