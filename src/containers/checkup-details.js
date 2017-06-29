@@ -20,7 +20,6 @@ class CheckupDetail extends Component {
   }
 
   render() {
-    console.log(this.state);
     return (
       <Segment>
         <Header as='h2'><Icon name='sign in' size='large' /> Checkup Data</Header>
