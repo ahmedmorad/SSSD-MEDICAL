@@ -17,6 +17,7 @@ class AppMenu extends Component {
                     </Menu.Item>
 
                     <Menu.Item name='patients' as={Link} to='/patients'>Patients</Menu.Item>
+                    <Menu.Item name='charts' as={Link} to='/charts'>Charts</Menu.Item>
 
                 </Menu.Menu>
 
