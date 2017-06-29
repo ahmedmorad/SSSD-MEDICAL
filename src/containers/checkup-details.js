@@ -22,7 +22,7 @@ class CheckupDetail extends Component {
   render() {
     return (
       <Segment>
-        <Header as='h2'><Icon name='sign in' size='large' /> Checkup Data</Header>
+        <Header as='h2'><Icon name='sign in' size='large' /> Checkup Details</Header>
         <Divider />
         <Form>
           <Form.Field>
