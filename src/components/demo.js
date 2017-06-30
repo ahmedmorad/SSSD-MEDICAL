@@ -6,7 +6,7 @@ class Demo extends React.Component {
     <Segment>
       <Header as='h2'>
           Ahmed Morad
-      </Heeader>
+      </Header>
     </Segment>
   }
 }
